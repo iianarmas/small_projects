@@ -15,3 +15,7 @@ user = int(input('Enter number: '))
 d_root = digital(user)
 
 print(f'Digital Root is: {d_root}')
+
+# can also be written as
+def digital(n):
+    return n % 9 or n and 9
