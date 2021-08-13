@@ -15,9 +15,7 @@ db = mysql.connector.connect(
 
 cursor = db.cursor()
 
-select = 'SELECT questions, answers FROM mini_quiz'
-
-cursor.execute(select)
+cursor.execute('SELECT questions, answers FROM mini_quiz')
 
 fetch = cursor.fetchall()
 
